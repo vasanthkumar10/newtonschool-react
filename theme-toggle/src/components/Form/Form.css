@@ -1,0 +1,25 @@
+.form-light {
+  background-color: #f0f0f0;
+  width: max-content;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.form-dark {
+  background-color: rgb(19, 112, 143);
+  width: max-content;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.header-light {
+  color: black;
+}
+
+.header-dark {
+  color: whitesmoke;
+}
