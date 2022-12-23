@@ -333,7 +333,7 @@ async function doGithubAction() {
   console.log("commits", commits);
 }
 
-doGithubAction();
+// doGithubAction();
 
 // const p1 = new Promise((res, rej) => {
 //   setTimeout(() => {
@@ -353,3 +353,22 @@ doGithubAction();
 // });
 
 // Promise.race([p1, p2]).then((result) => console.log(result));
+
+// fetch("https://jsonplaceholder.typicode.com/todos/1", {
+//   method: 'GET',
+//   headers:
+// })
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+
+// falsy
+// false, 0, undefined, null, ''
+
+// console.log(console.log("vasanth"));
+
+// short circuiting
+if (10 > 5 || console.log("vasanth")) {
+  console.log("success");
+} else {
+  console.log("failed");
+}
