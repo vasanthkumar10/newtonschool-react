@@ -1,27 +1,40 @@
 import "./App.css";
-import { Counter } from "./components/Counter";
-import { Cart } from "./components/Cart";
-import { Form } from "./components/Form";
-// import { Fetch } from "./components/Fetch";
-import { FragmentDemo } from "./components/FragmentDemo";
-import { BorderWrapper } from "./components/BorderWrapper";
+import { Assignment } from "./components/Assignment";
+// import { Counter } from "./components/Counter";
+// import { Cart } from "./components/Cart";
+// import { Form } from "./components/Form";
+// // import { Fetch } from "./components/Fetch";
+// import { FragmentDemo } from "./components/FragmentDemo";
+// import { BorderWrapper } from "./components/BorderWrapper";
+import { Data } from "./components/Data";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 
 function App() {
   return (
     <div className="App">
-      <BorderWrapper>
+      {/* <BorderWrapper>
         <Counter />
         <Cart />
-      </BorderWrapper>
+      </BorderWrapper> */}
       {/* <BorderWrapper> */}
-      <Form />
+      {/* <Form /> */}
       {/* </BorderWrapper> */}
       {/* <Fetch /> */}
-      <BorderWrapper>
+      {/* <BorderWrapper>
         <BorderWrapper>
           <FragmentDemo />
         </BorderWrapper>
-      </BorderWrapper>
+      </BorderWrapper> */}
+      {/* <Assignment /> */}
+      <ErrorBoundary>
+        <h1>title</h1>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Data value="vasanth" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Data />
+      </ErrorBoundary>
     </div>
   );
 }
