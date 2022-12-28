@@ -1,0 +1,12 @@
+.form-element {
+  margin: 10px;
+}
+
+/* scroll-behavior -> root element(html, *) */
+html #about {
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+}
