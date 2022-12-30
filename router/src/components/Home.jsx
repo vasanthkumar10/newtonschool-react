@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -10,7 +10,11 @@ export function Home() {
         nulla!
       </p>
       <li>
-        <Link to="/products">Go to Product</Link>
+        <NavLink to="/products/1" reloadDocument>
+          Go to Product
+        </NavLink>
+        <br />
+        <NavLink to="/">Home</NavLink>
       </li>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link, useParams } from "react-router-dom";
 
 export function Product() {
+  const { id } = useParams();
   return (
     <div>
-      <h1>Product</h1>
+      <h1>Product - {id}</h1>
       <ul>
         <li>Coffee</li>
         <li>Tea</li>
@@ -14,6 +15,9 @@ export function Product() {
       <li>
         <Link to="/">Go to home</Link>
       </li>
+      <NavLink to="/products/1" reloadDocument>
+        Go to Product
+      </NavLink>
     </div>
   );
 }
